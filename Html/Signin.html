@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SignInForm</title>		
+		<!--  CSS -->
+		<link rel="stylesheet" href="../Css/SignIn.css">
+		<!-- toast css -->
+		<link href="../Css/Toast.css" rel="stylesheet">
+		<!-- import js -->
+		<script src="../lib/siiimple-toast.min.js"></script>		
+		<script src="../Js/Signin.js"  type="module"></script>
+		<link rel="stylesheet" href="../lib/font-awesome/css/font-awesome.min.css">
+	</head>
+
+	<body>
+
+		<div class="wrapper">
+			<div class="image-holder"></div>
+			<div class="form-inner">
+				<div class="form-header">
+					<h3>Sign In</h3>
+					<img src="../Images/underline.png">
+				</div>
+				<input type="email" class="form-control" id="email" placeholder="Email" required>
+				<i class="fa fa-eye" id="eye"></i>
+				<input type="password" class="form-control" id="password" placeholder="Password" required>
+				<button id="SignInBtn" >SignIn</button>
+
+				<p><a id="forgotPW" style="font-size: small;">Forgot Password?</a></p>				
+				<p>Don't have an account?<a href="Signup.html">SignUp here</a></p>
+				
+			</div>
+			
+		</div>
+	</body>
+</html>

@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'OCR';
+    src: URL('../lib/OCRAStdRegular.ttf') format('truetype');
+    font-style: regular;
+  }
+
+body{
+    margin: 0;
+    padding:0;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../Images/Menu.jpg) no-repeat;
+    height: 100vh;
+    background-size: cover;
+    overflow:auto;
+}
+.BtnBox {
+    top: 50%;
+    left: 50%; 
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 40px 30px;
+}
+
+.avatar{
+    width: 250px;
+    height: 200px;
+   
+}
+ 
+#Play, #HowPlay, #Logout, #Quit, #Easy, #Medium, #Hard{
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 20px;
+    font-family: 'OCR';
+    background-image: linear-gradient(to right, #a5b13d 0%, #13AABB 100%);
+    text-decoration: none;
+}
+
+.button:hover {
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(162, 248, 237, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #427388;
+    cursor: pointer;
+}
+
+ 
+/* relevant styles */ 
+.image {
+    position: relative;
+    width: 250px;
+    height: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+}
+
+.authImg {
+    display: block;
+    width: 100%;
+    height: 35px;
+    border-radius: 20px;
+}
+
+.image_overlay {
+    position: absolute;
+    width: 250px;
+    height: 35px;
+    margin-top: 4px;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #a5b13d 0%, #13AABB 100%);
+    color: #ffffff;
+    font-family: 'OCR';
+    font-size: 18px;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.image_overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image_overlay:hover {
+    opacity: 1;
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(162, 248, 237, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #427388;
+}
+
+.image_overlay:hover > * {
+    transform: translateY(0);
+}
+
+.image_description {
+    margin-top: 8px;
+    font-weight: bold;
+    text-align: center;
+}

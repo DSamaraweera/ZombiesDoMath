@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'Alamak';
+    src: URL('../lib/Alamak.ttf') format('truetype');
+    font-style: regular;
+
+}
+@font-face {
+
+    font-family: 'EastDjakartaFont';
+    src: URL('../lib/EastDjakartaFont.ttf') format('truetype');
+    font-style: regular;
+}
+
+body{
+    margin: 0;
+    padding:0;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../Images/GameBG.jpg) no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.BtnArea {
+    display: grid;
+    
+}
+.TopArea {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: white;
+    font-family: Alamak;
+    text-align: center;
+    font-size: 20px;
+}
+.GameArea {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    color: #fff;
+    height: 100%; 
+}
+.RightArea {
+    display: grid;
+    grid-template-rows: 0.5fr 1fr 4fr;
+    color: #fff;
+    height: 100%; 
+}
+.RightArea p {
+    color: white;
+    font-family: EastDjakartaFont;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+#sound {
+    width: 80px;
+    height: 80px;
+    margin-top: -30px;
+}
+
+#ImageArea img {
+    width: 70%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.gamebtn {
+    display: block;
+    width: 70%;
+    height: 60%;
+    text-align: center;
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+    border-radius: 10px;
+    font-family: Alamak;
+    background-image: linear-gradient(to bottom, #ff9d5c 0%, #ff6600 100%);
+    border: 1px solid;
+    overflow: hidden;
+    position: relative;
+}
+
+.gamebtn:after {
+    background: #fff;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: 0.8;
+    position: absolute;
+    top: -50px;
+    transform: rotate(55deg);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 100px;
+}
+  
+.gamebtn:hover:after {
+    left: 120%;
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.6);
+}
+  
+/* Modal Content (Image) */
+#popupImg{
+    margin: auto;
+    display: block;
+}
+  

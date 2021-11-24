@@ -1,0 +1,31 @@
+<html>
+    <head>
+    <title>Your Score</title>
+         <link rel="stylesheet" type="text/css" href="../Css/Score.css"> 
+        <!----boostrap---->
+        <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- toast css -->
+		<link href="../Css/Toast.css" rel="stylesheet">
+		<!-- import js -->
+		<script src="../lib/siiimple-toast.min.js"></script>	
+        <script src = "../Js/Score.js"  type="module"></script>
+    </head>
+    <body>         
+        <center>
+             <div class="SBoard" id="SBoard">
+                <div class="star">
+                    <img src="../Images/nostar.png" id='star1'>
+                    <img src="../Images/nostar.png" id='star2'>
+                    <img src="../Images/nostar.png" id='star3'>
+                </div>           
+                 <p class="sc" id="scr"></p>
+                 <p id="highScr"></p><br>
+
+                <a class="button" id="PAgain" href="Level.html"> Play Again </a> <br>
+                <a class="button" id="Menu" href="../Index.html"> Main Menu </a> <br>
+            </div>
+       </center>
+       <div class="LoadSpinner" id="LoadSpinner"><p>... Loading ...<br>Please Wait</p></div>
+    </body>
+    </html>

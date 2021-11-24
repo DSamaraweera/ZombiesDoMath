@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../Css/GameArea.css">
+    <!----boostrap---->
+    <script src="../lib/jquery/jquery.min.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+
+    <!----fontawesome---->
+    <link href="../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <title>Game Area</title>
+</head>
+<body>
+<div class="wrapper" id="Game">
+   <div class="GameArea">
+        <div class="TopArea">
+            <div align="center">
+                <p>Score</p>
+                <p id="scoreId">000</p>
+            </div>
+            <div align="center">                 
+                <p id = "stageId">Stage 1 - 10</p>
+                <img src="../Images/sound.png" id="sound">
+            </div>
+
+            <div align="center">
+                <p>Time</p>
+                <p id="timer"></p>
+            </div>
+        </div>
+        
+        <div id = "ImageArea" align="center">
+            <img id="gameimg" align="center">             
+        </div>
+        <br><br>
+   </div>
+   <div class="RightArea">
+       <div></div>
+        <div align="center">
+            <p>Find the Correct Answer</p>
+        </div>
+        <div class="BtnArea">
+            <div align="center">
+                <button id= "b1" class="gamebtn"></button>
+            </div>
+            <div align="center">
+                <button id= "b2" class="gamebtn"></button>
+            </div>
+            <div align="center">
+                <button id= "b3" class="gamebtn"></button>
+            </div>
+            <div align="center">
+                <button id= "b4" class="gamebtn"></button>
+            </div>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <img class="modal-content" id="popupImg"> 
+    </div>
+</div>
+
+</body>
+<script src = "../js/GameArea.js"></script>
+<script src = "../js/Sound.js"></script>
+</html>

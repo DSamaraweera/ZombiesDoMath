@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'EastDjakartaFont';
+    src: URL('../lib/EastDjakartaFont.ttf') format('truetype');
+    font-style: regular;
+
+}
+@font-face {
+
+    font-family: 'zombiecontrol';
+    src: URL('../lib/zombiecontrol.ttf') format('truetype');
+    font-style: regular;
+}
+
+
+body{
+    margin: 0;
+    padding:0;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../Images/HowToPlay.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.SBoard p {
+    font-family: zombiecontrol;
+    color: rgb(244, 253, 242);
+    font-size: 36px;
+    font-weight: 900;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(11, 85, 38);
+}
+
+.SBoard {
+    width: 500px;
+    height: 520px;
+    display: none;
+    background: url(../Images/ScoreBoard.png);
+    color: #fff;
+    top: 50%;
+    left: 50%; 
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 20px 30px;
+
+}
+.star img {
+    height: 90px;
+    width: 90px;
+    margin-top: 100px;
+}
+
+#PAgain, #Menu{
+    display: block;
+    text-align: center;
+    width: 80%;
+    padding-bottom: 5px;
+    color: rgb(235, 255, 223);
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 10px;
+    font-family: 'EastDjakartaFont';
+    background-image: linear-gradient(to right, #62ff4d 0%,#2fd819 0%, #04722e 100%);
+    text-decoration: none;
+}
+
+.button:hover {
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(162, 248, 237, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #427388;
+}
+
+#LoadSpinner {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    left: 50%; 
+    position: absolute;
+    transform: translate(-50%,-50%);
+  }
+  #LoadSpinner:after {
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: 8px;
+    box-sizing: border-box;
+    border: 64px solid #fff;
+    border-color: rgb(47, 237, 126) transparent rgb(139, 255, 110) transparent;
+    animation: LoadSpinner 1.2s infinite;
+  }
+  @keyframes LoadSpinner {
+    0% {
+      transform: rotate(0);
+      animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    50% {
+      transform: rotate(900deg);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+      transform: rotate(1800deg);
+    }
+  }
+
+  #LoadSpinner p {
+    font-family: zombiecontrol;
+    color: rgb(244, 253, 242);
+    font-size: 27px;
+    font-weight: 900;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(2, 213, 72);
+
+  }
+  
+
+
